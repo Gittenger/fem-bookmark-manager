@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    "src/serviceWorker.js": true,
+    "src/setupTests.js": true,
+    "README.md": true,
+    "src/*.test.js": true
+  }
+}
