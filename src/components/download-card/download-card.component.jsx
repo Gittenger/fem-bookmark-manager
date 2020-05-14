@@ -1,6 +1,7 @@
 import React from "react";
 
 import InfoBox from "../info-box/info-box.component";
+import Button from "../button/button.component";
 
 import { CardContainer, DotBorder } from "./download-card.styles";
 
@@ -15,7 +16,7 @@ const DownloadCard = ({ imgSrc, browser, minVer }) => (
       }}
     />
     <DotBorder />
-    <button>Add & Install Extension</button>
+    <Button color="blue">Add & Install Extension</Button>
   </CardContainer>
 );
 

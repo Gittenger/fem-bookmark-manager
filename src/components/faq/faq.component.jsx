@@ -2,6 +2,7 @@ import React from "react";
 
 import InfoBox from "../info-box/info-box.component";
 import Question from "../faq-question/faq-question.components";
+import Button from "../button/button.component";
 
 import { FaqContainer, FaqInfoContainer, FaqQuestions } from "./faq.styles";
 
@@ -30,7 +31,7 @@ const Faq = () => (
         <Question content={content} key={content} />
       ))}
     </FaqQuestions>
-    <button>More info</button>
+    <Button color="blue">More info</Button>
   </FaqContainer>
 );
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 import InfoBox from "../info-box/info-box.component";
+import Button from "../button/button.component";
 
 import FeatureImg from "../../assets/illustration-features-tab-1.svg";
 import { FeatureContainer } from "./feature.styles";
@@ -21,7 +22,7 @@ const Feature = () => (
         }}
         alignment="center"
       />
-      <button>More info</button>
+      <Button color="blue">More info</Button>
     </div>
   </FeatureContainer>
 );

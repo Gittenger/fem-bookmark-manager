@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../button/button.component";
+
 import {
   SubscribeContainer,
   Heading,
@@ -13,7 +15,7 @@ const Subscribe = () => (
     <Title>Stay up to date with what we're doing</Title>
     <SubscriptionForm>
       <input type="email" placeholder="Enter your email address" />
-      <button>Contact us</button>
+      <Button color="red">Contact us</Button>
     </SubscriptionForm>
   </SubscribeContainer>
 );

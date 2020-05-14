@@ -7,7 +7,6 @@ export const NavContainer = styled.div`
   height: 8rem;
   width: 100%;
   padding-top: 4rem;
-  background-color: aliceblue;
   justify-content: space-between;
 
   nav {

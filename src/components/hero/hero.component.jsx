@@ -1,6 +1,7 @@
 import React from "react";
 
 import InfoBox from "../info-box/info-box.component";
+import Button from "../button/button.component";
 
 import HeroImg from "../../assets/illustration-hero.svg";
 import { HeroContainer } from "./hero.styles";
@@ -17,8 +18,8 @@ const Hero = () => (
         }}
         alignment="left"
       />
-      <button>Get it on Chrome</button>
-      <button>Get it on Firefox</button>
+      <Button color="blue">Get it on Chrome</Button>
+      <Button color="grey">Get it on Firefox</Button>
     </div>
 
     <div>
