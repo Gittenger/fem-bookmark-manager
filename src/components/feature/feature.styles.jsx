@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const FeatureContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 `;
