@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar.component";
 import Hero from "./components/hero/hero.component";
 import Features from "./components/features/features.component";
 import DownloadLinks from "./components/download-links/download-links.component";
+import Faq from "./components/faq/faq.component";
 
 import GlobalStyles from "./style-utils/global.styles";
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Features />
       <DownloadLinks />
+      <Faq />
     </AppContainer>
   );
 }

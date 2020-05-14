@@ -33,7 +33,12 @@ const DownloadLinks = () => (
     </DownloadsInfoContainer>
     <DownloadCardsContainer>
       {browsers.map(({ browser, imgSrc, minVer }) => (
-        <DownloadCard imgSrc={imgSrc} browser={browser} minVer={minVer} />
+        <DownloadCard
+          imgSrc={imgSrc}
+          browser={browser}
+          minVer={minVer}
+          key={browser}
+        />
       ))}
     </DownloadCardsContainer>
   </DownloadsContainer>
