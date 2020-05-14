@@ -4,6 +4,7 @@ import AppContainer from "./components/app-container/app-container.component";
 import Navbar from "./components/navbar/navbar.component";
 import Hero from "./components/hero/hero.component";
 import Features from "./components/features/features.component";
+import DownloadLinks from "./components/download-links/download-links.component";
 
 import GlobalStyles from "./style-utils/global.styles";
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <DownloadLinks />
     </AppContainer>
   );
 }
