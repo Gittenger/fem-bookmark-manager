@@ -1,12 +1,12 @@
 import React from "react";
 
-import LogoImg from "../../assets/logo-bookmark.svg";
+import Logo from "../../assets/logo-bookmark.svg";
 import { NavContainer } from "./navbar.styles";
 
 const Navbar = () => (
   <NavContainer>
     <div>
-      <img src={LogoImg} alt="" />
+      <img src={Logo} alt="" />
     </div>
     <nav>
       <ul>

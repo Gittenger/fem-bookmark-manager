@@ -6,6 +6,8 @@ import Hero from "./components/hero/hero.component";
 import Features from "./components/features/features.component";
 import DownloadLinks from "./components/download-links/download-links.component";
 import Faq from "./components/faq/faq.component";
+import Subscribe from "./components/subscribe/subscribe.component";
+import Footer from "./components/footer/footer.component";
 
 import GlobalStyles from "./style-utils/global.styles";
 
@@ -18,6 +20,8 @@ function App() {
       <Features />
       <DownloadLinks />
       <Faq />
+      <Subscribe />
+      <Footer />
     </AppContainer>
   );
 }
