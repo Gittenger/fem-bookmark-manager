@@ -29,9 +29,10 @@ a {
   text-decoration: none;
 }
 
-.App{
+#root {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
 }
 `;
 
