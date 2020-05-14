@@ -4,6 +4,12 @@ import { FlexCenter } from "../../style-utils/utils.styles";
 
 export const FooterContainer = styled.footer`
   ${FlexCenter}
+  width: 100%;
+  background-color: dodgerblue;
+`;
+
+export const FooterLayout = styled.div`
+  ${FlexCenter}
   justify-content: space-between;
   width: 100%;
 `;

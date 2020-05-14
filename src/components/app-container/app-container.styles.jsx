@@ -10,6 +10,7 @@ export const OuterContainer = styled.div`
 
 export const InnerContainer = styled.div`
   ${FlexCenter}
-  flex-direction: column;
+  flex-direction: ${({ direction }) =>
+    direction === "row" ? "row" : "column"};
   width: 1100px;
 `;

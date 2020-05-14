@@ -5,6 +5,9 @@ import { FlexCenter } from "../../style-utils/utils.styles";
 export const SubscribeContainer = styled.div`
   ${FlexCenter}
   flex-direction: column;
+  height: 20rem;
+  width: 100%;
+  background-color: #f1f1f1;
 `;
 
 export const Heading = styled.div`
