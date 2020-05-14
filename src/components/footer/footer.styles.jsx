@@ -5,7 +5,8 @@ import { FlexCenter } from "../../style-utils/utils.styles";
 export const FooterContainer = styled.footer`
   ${FlexCenter}
   width: 100%;
-  background-color: dodgerblue;
+  background-color: ${({ theme: { colors } }) => `${colors.darkBlue}`};
+  color: ${({ theme: { colors } }) => `${colors.white}`};
 `;
 
 export const FooterLayout = styled.div`

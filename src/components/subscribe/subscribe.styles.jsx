@@ -7,7 +7,8 @@ export const SubscribeContainer = styled.div`
   flex-direction: column;
   height: 20rem;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: ${({ theme: { colors } }) => `${colors.softBlue}`};
+  color: ${({ theme: { colors } }) => `${colors.white}`};
 `;
 
 export const Heading = styled.div`

@@ -2,7 +2,7 @@ import React from "react";
 
 import { InnerContainer } from "../app-container/app-container.styles";
 
-import Logo from "../../assets/logo-bookmark.svg";
+import Logo from "../../assets/logo-bookmark-white.svg";
 import {
   FooterContainer,
   FooterLayout,

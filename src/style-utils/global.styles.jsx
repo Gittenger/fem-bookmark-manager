@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
 }
 
 ul,
