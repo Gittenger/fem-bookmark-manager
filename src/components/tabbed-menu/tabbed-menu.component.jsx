@@ -10,21 +10,21 @@ const TabbedMenu = ({ setSelected, updateTabbedDisplay }) => (
         setSelected(0);
       }}
     >
-      Option 0
+      Simple Bookmarking
     </MenuOption>
     <MenuOption
       onClick={() => {
         setSelected(1);
       }}
     >
-      Option 1
+      Speedy Searching
     </MenuOption>
     <MenuOption
       onClick={() => {
         setSelected(2);
       }}
     >
-      Option 2
+      Easy Sharing
     </MenuOption>
   </MenuContainer>
 );

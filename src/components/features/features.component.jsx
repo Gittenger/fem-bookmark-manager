@@ -41,7 +41,7 @@ const Features = () => {
       <MenuContainer>
         <TabbedMenu setSelected={setSelectedFeature} />
       </MenuContainer>
-      <Feature />
+      <Feature selection={selectedFeature} />
     </FeaturesContainer>
   );
 };
