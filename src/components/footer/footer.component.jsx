@@ -16,11 +16,19 @@ const Footer = () => (
       <FooterLayout>
         <FooterLinks>
           <li>
-            <img src={Logo} alt="" />
+            <a href="#">
+              <img src={Logo} alt="" />
+            </a>
           </li>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </FooterLinks>
         <Social>
           <div>Facebook</div>

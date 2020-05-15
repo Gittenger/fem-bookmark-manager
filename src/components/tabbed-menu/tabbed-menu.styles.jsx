@@ -13,8 +13,13 @@ export const MenuOption = styled.div`
   ${FlexCenter}
   padding: 2rem 0;
   cursor: pointer;
+  transition: color 0.3s;
 
   &.active {
     border-bottom: red 2.5px solid;
+  }
+
+  &:hover {
+    color: ${({ theme: { colors } }) => colors.softRed};
   }
 `;

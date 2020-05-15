@@ -23,6 +23,14 @@ export const FooterLinks = styled.footer`
   li {
     margin: 0 3rem;
   }
+
+  a {
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    color: ${({ theme: { colors } }) => colors.softRed};
+  }
 `;
 
 export const Social = styled.footer`

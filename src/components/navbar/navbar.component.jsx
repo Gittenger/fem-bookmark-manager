@@ -12,9 +12,15 @@ const Navbar = () => (
     </div>
     <nav>
       <ul>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
         <li>
           <Button color="red">Login</Button>
         </li>

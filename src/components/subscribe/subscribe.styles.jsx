@@ -30,7 +30,12 @@ export const SubscriptionForm = styled.div`
   width: 50%;
   margin-bottom: 2rem;
 
-  input {
+  form {
+    ${FlexCenter}
+    width: 100%;
+  }
+
+  input:first-child {
     width: 40%;
     padding: 1rem;
     margin-right: 1.5rem;

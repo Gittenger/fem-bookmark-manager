@@ -14,8 +14,10 @@ const Subscribe = () => (
     <Heading>35,000+ already joined</Heading>
     <Title>Stay up to date with what we're doing</Title>
     <SubscriptionForm>
-      <input type="email" placeholder="Enter your email address" />
-      <Button color="red">Contact us</Button>
+      <form action="#">
+        <input type="email" placeholder="Enter your email address" />
+        <Button submit={true} value={"Contact Us"} color="red" />
+      </form>
     </SubscriptionForm>
   </SubscribeContainer>
 );

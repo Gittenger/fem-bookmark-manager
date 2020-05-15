@@ -8,6 +8,11 @@ export const Question = styled.div`
   width: 100%;
   padding: 1rem 0;
   border-bottom: lightgrey 1px solid;
+  cursor: pointer;
+
+  &:hover p {
+    color: ${({ theme: { colors } }) => colors.softRed};
+  }
 
   &:first-child {
     border-top: lightgrey 1px solid;
@@ -15,5 +20,6 @@ export const Question = styled.div`
 
   & > p {
     color: ${({ theme: { colors } }) => colors.darkBlue};
+    transition: all 0.3s;
   }
 `;

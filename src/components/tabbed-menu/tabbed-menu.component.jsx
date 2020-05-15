@@ -2,7 +2,7 @@ import React from "react";
 
 import { MenuContainer, MenuOption } from "./tabbed-menu.styles";
 
-const TabbedMenu = ({ setSelected, updateTabbedDisplay }) => (
+const TabbedMenu = ({ setSelected }) => (
   <MenuContainer id="tabbed-menu">
     <MenuOption
       className="active"

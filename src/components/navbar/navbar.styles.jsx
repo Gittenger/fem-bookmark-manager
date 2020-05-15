@@ -23,6 +23,14 @@ export const NavContainer = styled.div`
     }
   }
 
+  a {
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    color: ${({ theme: { colors } }) => colors.softRed};
+  }
+
   button {
     font-size: 1.6rem;
     text-transform: uppercase;

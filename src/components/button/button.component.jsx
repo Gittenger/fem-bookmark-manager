@@ -1,9 +1,12 @@
 import React from "react";
 
-import { StyledButton } from "./button.styles";
+import { StyledButton, StyledSubmitButton } from "./button.styles";
 
-const Button = ({ children, color }) => (
-  <StyledButton color={color}>{children}</StyledButton>
-);
+const Button = ({ children, color, submit, value }) =>
+  submit ? (
+    <StyledSubmitButton type="submit" value={value} color={color} />
+  ) : (
+    <StyledButton color={color}>{children}</StyledButton>
+  );
 
 export default Button;
