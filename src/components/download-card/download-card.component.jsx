@@ -14,6 +14,7 @@ const DownloadCard = ({ imgSrc, browser, minVer }) => (
         title: `Add to ${browser}`,
         content: `Minimum version ${minVer}`,
       }}
+      alignment="center"
     />
     <DotBorder />
     <Button color="blue">Add & Install Extension</Button>

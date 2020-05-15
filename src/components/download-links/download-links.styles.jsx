@@ -7,6 +7,7 @@ export const DownloadsContainer = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr minmax(2fr, 4fr);
   justify-items: center;
+  margin: 15rem 0 10rem;
 `;
 
 export const DownloadsInfoContainer = styled.div`

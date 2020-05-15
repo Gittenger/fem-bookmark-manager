@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
       ? `${colors.white}`
       : `${colors.darkBlue}`};
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   font-size: 1.4rem;
   font-weight: 500;
 

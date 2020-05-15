@@ -18,9 +18,18 @@ export const FooterLayout = styled.div`
 export const FooterLinks = styled.footer`
   ${FlexCenter}
   justify-content: space-between;
+  padding: 2.5rem;
+
+  li {
+    margin: 0 3rem;
+  }
 `;
 
 export const Social = styled.footer`
   ${FlexCenter}
   justify-content: space-between;
+
+  & > * {
+    margin: 0 3rem;
+  }
 `;
