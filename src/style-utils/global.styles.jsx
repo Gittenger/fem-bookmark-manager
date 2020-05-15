@@ -14,6 +14,12 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: ${({ theme: { colors } }) => colors.darkBlue};
+}
+
+p{
+  color: ${({ theme: { colors } }) => colors.greyBlue};
 }
 
 ul,

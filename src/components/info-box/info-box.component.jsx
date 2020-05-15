@@ -2,17 +2,17 @@ import React from "react";
 
 import { InfoBoxContainer } from "./info-box.styles";
 
-const InfoBox = ({ desc, priority, alignment }) => (
+const InfoBox = ({ desc: { priority, title, content }, alignment }) => (
   <InfoBoxContainer alignment={alignment}>
     {priority === "h1" ? (
-      <h1>{desc.title}</h1>
+      <h1>{title}</h1>
     ) : priority === "h2" ? (
-      <h2>{desc.title}</h2>
+      <h2>{title}</h2>
     ) : (
-      <h3>{desc.title}</h3>
+      <h3>{title}</h3>
     )}
 
-    <p>{desc.content}</p>
+    <p>{content}</p>
   </InfoBoxContainer>
 );
 

@@ -12,4 +12,8 @@ export const Question = styled.div`
   &:first-child {
     border-top: lightgrey 1px solid;
   }
+
+  & > p {
+    color: ${({ theme: { colors } }) => colors.darkBlue};
+  }
 `;

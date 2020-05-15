@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 import InfoBox from "../info-box/info-box.component";
 import TabbedMenu from "../tabbed-menu/tabbed-menu.component";
@@ -13,17 +13,17 @@ import {
 const Features = () => {
   const [selectedFeature, setSelectedFeature] = useState(0);
 
-  const updateTabbedDisplay = () => {
+  const updateTabbedDisplay = useCallback(() => {
     const menuItems = Array.from(
       document.getElementById("tabbed-menu").children
     );
     menuItems.forEach((item) => item.classList.remove("active"));
     menuItems[selectedFeature].classList.add("active");
-  };
+  }, [selectedFeature]);
 
   useEffect(() => {
     updateTabbedDisplay();
-  }, [selectedFeature]);
+  }, [updateTabbedDisplay]);
 
   return (
     <FeaturesContainer>
