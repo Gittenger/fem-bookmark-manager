@@ -11,7 +11,7 @@ export const DownloadsContainer = styled.div`
 `;
 
 export const DownloadsInfoContainer = styled.div`
-  width: 50%;
+  width: 60%;
 `;
 
 export const DownloadCardsContainer = styled.div`

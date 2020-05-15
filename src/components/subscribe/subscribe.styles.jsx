@@ -12,8 +12,10 @@ export const SubscribeContainer = styled.div`
 `;
 
 export const Heading = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 3rem 0;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
 `;
 
 export const Title = styled.h2`

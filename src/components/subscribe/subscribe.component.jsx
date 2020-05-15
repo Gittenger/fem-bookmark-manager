@@ -11,7 +11,7 @@ import {
 
 const Subscribe = () => (
   <SubscribeContainer>
-    <Heading>35,000 already joined</Heading>
+    <Heading>35,000+ already joined</Heading>
     <Title>Stay up to date with what we're doing</Title>
     <SubscriptionForm>
       <input type="email" placeholder="Enter your email address" />

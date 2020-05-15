@@ -25,6 +25,7 @@ const Feature = ({ selection }) => (
 
     <div>
       <InfoBox
+        id="tabbed-menu-selection"
         desc={
           selection === 0
             ? {
@@ -47,7 +48,7 @@ const Feature = ({ selection }) => (
                   "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
               }
         }
-        alignment="center"
+        alignment="left"
       />
       <Button color="blue">More info</Button>
     </div>

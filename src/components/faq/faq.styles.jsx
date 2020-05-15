@@ -11,7 +11,7 @@ export const FaqContainer = styled.div`
 `;
 
 export const FaqInfoContainer = styled.div`
-  width: 50%;
+  width: 60%;
   margin-bottom: 2rem;
 `;
 

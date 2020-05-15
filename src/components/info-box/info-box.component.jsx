@@ -2,8 +2,8 @@ import React from "react";
 
 import { InfoBoxContainer } from "./info-box.styles";
 
-const InfoBox = ({ desc: { priority, title, content }, alignment }) => (
-  <InfoBoxContainer alignment={alignment}>
+const InfoBox = ({ desc: { priority, title, content }, alignment, id }) => (
+  <InfoBoxContainer alignment={alignment} id={id}>
     {priority === "h1" ? (
       <h1>{title}</h1>
     ) : priority === "h2" ? (
