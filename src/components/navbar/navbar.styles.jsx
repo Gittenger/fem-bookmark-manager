@@ -8,15 +8,24 @@ export const NavContainer = styled.div`
   width: 100%;
   padding-top: 4rem;
   justify-content: space-between;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 
   nav {
     ${FlexCenter}
-    width: 40%;
+    width: 50%;
 
     ul {
       ${FlexCenter}
       width: 100%;
       justify-content: space-between;
     }
+  }
+
+  button {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 `;

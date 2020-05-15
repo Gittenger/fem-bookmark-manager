@@ -8,8 +8,16 @@ export const StyledButton = styled.button`
       : color === "red"
       ? `${colors.softRed}`
       : `${colors.greyLight}`};
+  color: ${({ theme: { colors }, color }) =>
+    color === "blue"
+      ? `${colors.white}`
+      : color === "red"
+      ? `${colors.white}`
+      : `${colors.darkBlue}`};
   cursor: pointer;
   border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 
   &:focus {
     outline: none;

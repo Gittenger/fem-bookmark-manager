@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+button {
+    font-family: "Rubik", sans-serif;
+}
+
 #root {
   display: grid;
   grid-template-columns: 1fr;

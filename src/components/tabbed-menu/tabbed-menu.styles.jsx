@@ -12,6 +12,7 @@ export const MenuContainer = styled.div`
 export const MenuOption = styled.div`
   ${FlexCenter}
   padding: 2rem 0;
+  cursor: pointer;
 
   &.active {
     border-bottom: red 2.5px solid;
