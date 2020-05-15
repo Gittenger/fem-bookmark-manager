@@ -7,5 +7,13 @@ export const StyledButton = styled.button`
       ? `${colors.softBlue}`
       : color === "red"
       ? `${colors.softRed}`
-      : `${colors.greyBlue}`};
+      : `${colors.greyLight}`};
+  cursor: pointer;
+  border-radius: 1rem;
+
+  &:focus {
+    outline: none;
+    box-shadow: ${({ theme: { colors } }) =>
+      `0 0 0 1px ${colors.softBlue}, 0 1px 1px 1px rgba(0, 0, 0, 0.7)`};
+  }
 `;
