@@ -1,13 +1,27 @@
 import React from "react";
 
-import Arrow from "../../assets/icon-arrow.svg";
-import { Question } from "./faq-question.styles";
+import { ReactComponent as Arrow } from "../../assets/icon-arrow.svg";
+import {
+  QuestionContainer,
+  QuestionBox,
+  AnswerBox,
+} from "./faq-question.styles";
 
-const FaqQuestion = ({ content }) => (
-  <Question>
-    <p>{content}</p>
-    <img src={Arrow} alt="" />
-  </Question>
-);
+const FaqQuestion = ({ question, answer }) => {
+  const handleClick = (e) => {
+    e.currentTarget.classList.toggle("active");
+  };
 
+  return (
+    <QuestionContainer onClick={handleClick}>
+      <QuestionBox>
+        <p>{question}</p>
+        <Arrow />
+      </QuestionBox>
+      <AnswerBox>
+        <p id="faq-answer">{answer}</p>
+      </AnswerBox>
+    </QuestionContainer>
+  );
+};
 export default FaqQuestion;

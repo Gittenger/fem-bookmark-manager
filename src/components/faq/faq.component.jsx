@@ -7,10 +7,26 @@ import Button from "../button/button.component";
 import { FaqContainer, FaqInfoContainer, FaqQuestions } from "./faq.styles";
 
 const questions = [
-  { content: "What is Bookmark?" },
-  { content: "How can I request a new browser?" },
-  { content: "Is there a mobile app?" },
-  { content: "What about other Chromium browsers?" },
+  {
+    question: "What is Bookmark?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut non laborum culpa facilis rerum, repudiandae provident iure nostrum nulla maxime in odit sapiente.",
+  },
+  {
+    question: "How can I request a new browser?",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae, amet laboriosam aut esse quisquam, quis pariatur repellendus, ad veritatis a.",
+  },
+  {
+    question: "Is there a mobile app?",
+    answer:
+      "Quasi animi deserunt similique. Lorem ipsum dolor sit.  Quidem iusto beatae? Odit dicta impedit molestiae veniam!",
+  },
+  {
+    question: "What about other Chromium browsers?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis error excepturi, possimus nam soluta consectetur amet eum obcaecati.",
+  },
 ];
 
 const Faq = () => (
@@ -27,8 +43,8 @@ const Faq = () => (
       />
     </FaqInfoContainer>
     <FaqQuestions>
-      {questions.map(({ content }) => (
-        <Question content={content} key={content} />
+      {questions.map(({ question, answer }) => (
+        <Question question={question} answer={answer} key={question} />
       ))}
     </FaqQuestions>
     <Button color="blue">More info</Button>

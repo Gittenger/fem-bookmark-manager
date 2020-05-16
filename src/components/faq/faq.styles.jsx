@@ -8,6 +8,7 @@ export const FaqContainer = styled.div`
   grid-template-rows: 1fr minmax(2fr, 3fr) 1fr;
   justify-items: center;
   margin-bottom: 10rem;
+  width: 80%;
 `;
 
 export const FaqInfoContainer = styled.div`
