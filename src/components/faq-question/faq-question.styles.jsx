@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { FlexCenter } from "../../style-utils/utils.styles";
+import { FlexCenter, device } from "../../style-utils/utils.styles";
+
+const { mobile } = device;
 
 export const QuestionContainer = styled.div`
   width: 100%;
@@ -62,6 +64,12 @@ export const QuestionBox = styled.div`
 
   &:hover > p:first-child {
     color: ${({ theme: { colors } }) => colors.softRed};
+  }
+
+  @media ${mobile} {
+    &:hover > p:first-child {
+      color: unset;
+    }
   }
 `;
 

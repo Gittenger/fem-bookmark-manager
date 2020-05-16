@@ -16,6 +16,9 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: ${({ theme: { colors } }) => colors.darkBlue};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 p{

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { FlexCenter } from "../../style-utils/utils.styles";
+import { FlexCenter, device } from "../../style-utils/utils.styles";
+
+const { mobile } = device;
 
 export const SubscribeContainer = styled.div`
   ${FlexCenter}
@@ -9,6 +11,10 @@ export const SubscribeContainer = styled.div`
   background-color: ${({ theme: { colors } }) => `${colors.softBlue}`};
   color: ${({ theme: { colors } }) => `${colors.white}`};
   padding: 3rem;
+
+  @media ${mobile} {
+    padding: 0;
+  }
 `;
 
 export const Heading = styled.div`
@@ -23,6 +29,10 @@ export const Title = styled.h2`
   width: 30%;
   text-align: center;
   margin: 0 0 3rem;
+
+  @media ${mobile} {
+    width: 90%;
+  }
 `;
 
 export const SubscriptionForm = styled.div`
@@ -39,5 +49,13 @@ export const SubscriptionForm = styled.div`
     width: 40%;
     padding: 1rem;
     margin-right: 1.5rem;
+  }
+
+  @media ${mobile} {
+    width: 100%;
+
+    input:first-child {
+      // width: 70%;
+    }
   }
 `;

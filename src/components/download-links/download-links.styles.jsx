@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { FlexCenter } from "../../style-utils/utils.styles";
+import { FlexCenter, device } from "../../style-utils/utils.styles";
+
+const { mobile } = device;
 
 export const DownloadsContainer = styled.div`
   display: grid;
@@ -8,10 +10,14 @@ export const DownloadsContainer = styled.div`
   grid-template-rows: 1fr minmax(2fr, 4fr);
   justify-items: center;
   margin: 15rem 0 10rem;
+
+  @media ${mobile} {
+    width: 100%;
+  }
 `;
 
 export const DownloadsInfoContainer = styled.div`
-  width: 60%;
+  width: 80%;
 `;
 
 export const DownloadCardsContainer = styled.div`
@@ -24,5 +30,16 @@ export const DownloadCardsContainer = styled.div`
 
   & > *:last-child {
     transform: translateY(20px);
+  }
+
+  @media ${mobile} {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    & > *:first-child,
+    & > *:last-child {
+      transform: translateY(0);
+    }
   }
 `;

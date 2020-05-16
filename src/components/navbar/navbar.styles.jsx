@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { FlexCenter } from "../../style-utils/utils.styles";
+import { FlexCenter, device } from "../../style-utils/utils.styles";
+
+const { mobile } = device;
 
 export const NavContainer = styled.div`
   ${FlexCenter}
@@ -35,5 +37,42 @@ export const NavContainer = styled.div`
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+
+  nav#mobile {
+    display: none;
+  }
+
+  @media ${mobile} {
+    width: 95%;
+
+    div:first-child {
+      max-width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    nav#normal {
+      display: none;
+    }
+
+    nav#mobile {
+      display: block;
+      width: 4rem;
+
+      #mobile-menu-toggle {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
   }
 `;
