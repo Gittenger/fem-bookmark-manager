@@ -2,6 +2,9 @@ import React from "react";
 
 import { InnerContainer } from "../app-container/app-container.styles";
 
+import { ReactComponent as FacebookImg } from "../../assets/icon-facebook.svg";
+import { ReactComponent as TwitterImg } from "../../assets/icon-twitter.svg";
+
 import Logo from "../../assets/logo-bookmark-white.svg";
 import {
   FooterContainer,
@@ -31,8 +34,12 @@ const Footer = () => (
           </li>
         </FooterLinks>
         <Social>
-          <div>Facebook</div>
-          <div>Twitter</div>
+          <a href="#">
+            <FacebookImg />
+          </a>
+          <a href="#">
+            <TwitterImg />
+          </a>
         </Social>
       </FooterLayout>
     </InnerContainer>

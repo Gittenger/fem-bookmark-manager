@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   background-color: ${({ theme: { colors } }) => colors.white};
   box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.04);
   margin: 0 2rem;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   border-radius: 1.5rem;
 
   p {
@@ -19,9 +19,7 @@ export const CardContainer = styled.div`
   img {
     margin-bottom: 3rem;
   }
-`;
 
-export const DotBorder = styled.div`
-  height: 5px;
-  border-top: dotted 3px grey;
+  #dot-border {
+  }
 `;

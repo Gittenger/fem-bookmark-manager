@@ -3,7 +3,8 @@ import React from "react";
 import InfoBox from "../info-box/info-box.component";
 import Button from "../button/button.component";
 
-import { CardContainer, DotBorder } from "./download-card.styles";
+import DotBorder from "../../assets/bg-dots.svg";
+import { CardContainer } from "./download-card.styles";
 
 const DownloadCard = ({ imgSrc, browser, minVer }) => (
   <CardContainer>
@@ -16,7 +17,9 @@ const DownloadCard = ({ imgSrc, browser, minVer }) => (
       }}
       alignment="center"
     />
-    <DotBorder />
+    <div id="dot-border">
+      <img src={DotBorder} alt="" />
+    </div>
     <Button color="blue">Add & Install Extension</Button>
   </CardContainer>
 );
